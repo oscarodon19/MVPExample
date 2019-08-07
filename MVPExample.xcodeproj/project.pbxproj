@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		F470645D22FA3AE4004753D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470645C22FA3AE4004753D9 /* AppDelegate.swift */; };
 		F470645F22FA3AE4004753D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470645E22FA3AE4004753D9 /* ViewController.swift */; };
-		F470646222FA3AE4004753D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F470646022FA3AE4004753D9 /* Main.storyboard */; };
 		F470646422FA3AE7004753D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F470646322FA3AE7004753D9 /* Assets.xcassets */; };
-		F470646722FA3AE7004753D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F470646522FA3AE7004753D9 /* LaunchScreen.storyboard */; };
 		F470647222FA3AE7004753D9 /* MPVExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470647122FA3AE7004753D9 /* MPVExampleTests.swift */; };
 		F470647D22FA3AE7004753D9 /* MPVExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470647C22FA3AE7004753D9 /* MPVExampleUITests.swift */; };
+		F470648B22FA4427004753D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F470648A22FA4427004753D9 /* LaunchScreen.storyboard */; };
+		F470648E22FA44B5004753D9 /* TrafficLightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470648D22FA44B5004753D9 /* TrafficLightPresenter.swift */; };
+		F470649122FA4506004753D9 /* TrafficLightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470649022FA4506004753D9 /* TrafficLightService.swift */; };
+		F470649422FA4597004753D9 /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470649322FA4597004753D9 /* TrafficLight.swift */; };
+		F470649722FA470F004753D9 /* TrafficLightViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F470649622FA470F004753D9 /* TrafficLightViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +37,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F470645922FA3AE4004753D9 /* MPVExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPVExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F470645922FA3AE4004753D9 /* MVPExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F470645C22FA3AE4004753D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F470645E22FA3AE4004753D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F470646122FA3AE4004753D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F470646322FA3AE7004753D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F470646622FA3AE7004753D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F470646822FA3AE7004753D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F470646D22FA3AE7004753D9 /* MPVExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPVExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F470646D22FA3AE7004753D9 /* MVPExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F470647122FA3AE7004753D9 /* MPVExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVExampleTests.swift; sourceTree = "<group>"; };
 		F470647322FA3AE7004753D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F470647822FA3AE7004753D9 /* MPVExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MPVExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F470647822FA3AE7004753D9 /* MVPExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F470647C22FA3AE7004753D9 /* MPVExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVExampleUITests.swift; sourceTree = "<group>"; };
 		F470647E22FA3AE7004753D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F470648A22FA4427004753D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F470648D22FA44B5004753D9 /* TrafficLightPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightPresenter.swift; sourceTree = "<group>"; };
+		F470649022FA4506004753D9 /* TrafficLightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightService.swift; sourceTree = "<group>"; };
+		F470649322FA4597004753D9 /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		F470649622FA470F004753D9 /* TrafficLightViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +93,9 @@
 		F470645A22FA3AE4004753D9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F470645922FA3AE4004753D9 /* MPVExample.app */,
-				F470646D22FA3AE7004753D9 /* MPVExampleTests.xctest */,
-				F470647822FA3AE7004753D9 /* MPVExampleUITests.xctest */,
+				F470645922FA3AE4004753D9 /* MVPExample.app */,
+				F470646D22FA3AE7004753D9 /* MVPExampleTests.xctest */,
+				F470647822FA3AE7004753D9 /* MVPExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +103,15 @@
 		F470645B22FA3AE4004753D9 /* MPVExample */ = {
 			isa = PBXGroup;
 			children = (
+				F470649522FA46F2004753D9 /* Delegate */,
+				F470649222FA4585004753D9 /* Model */,
+				F470648F22FA44F1004753D9 /* Service */,
+				F470648C22FA447B004753D9 /* Presenter */,
 				F470645C22FA3AE4004753D9 /* AppDelegate.swift */,
 				F470645E22FA3AE4004753D9 /* ViewController.swift */,
-				F470646022FA3AE4004753D9 /* Main.storyboard */,
 				F470646322FA3AE7004753D9 /* Assets.xcassets */,
-				F470646522FA3AE7004753D9 /* LaunchScreen.storyboard */,
 				F470646822FA3AE7004753D9 /* Info.plist */,
+				F470648A22FA4427004753D9 /* LaunchScreen.storyboard */,
 			);
 			path = MPVExample;
 			sourceTree = "<group>";
@@ -125,12 +134,44 @@
 			path = MPVExampleUITests;
 			sourceTree = "<group>";
 		};
+		F470648C22FA447B004753D9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F470648D22FA44B5004753D9 /* TrafficLightPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F470648F22FA44F1004753D9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F470649022FA4506004753D9 /* TrafficLightService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F470649222FA4585004753D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F470649322FA4597004753D9 /* TrafficLight.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F470649522FA46F2004753D9 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F470649622FA470F004753D9 /* TrafficLightViewDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F470645822FA3AE4004753D9 /* MPVExample */ = {
+		F470645822FA3AE4004753D9 /* MVPExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F470648122FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MPVExample" */;
+			buildConfigurationList = F470648122FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MVPExample" */;
 			buildPhases = (
 				F470645522FA3AE4004753D9 /* Sources */,
 				F470645622FA3AE4004753D9 /* Frameworks */,
@@ -140,14 +181,14 @@
 			);
 			dependencies = (
 			);
-			name = MPVExample;
+			name = MVPExample;
 			productName = MPVExample;
-			productReference = F470645922FA3AE4004753D9 /* MPVExample.app */;
+			productReference = F470645922FA3AE4004753D9 /* MVPExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F470646C22FA3AE7004753D9 /* MPVExampleTests */ = {
+		F470646C22FA3AE7004753D9 /* MVPExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F470648422FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MPVExampleTests" */;
+			buildConfigurationList = F470648422FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MVPExampleTests" */;
 			buildPhases = (
 				F470646922FA3AE7004753D9 /* Sources */,
 				F470646A22FA3AE7004753D9 /* Frameworks */,
@@ -158,14 +199,14 @@
 			dependencies = (
 				F470646F22FA3AE7004753D9 /* PBXTargetDependency */,
 			);
-			name = MPVExampleTests;
+			name = MVPExampleTests;
 			productName = MPVExampleTests;
-			productReference = F470646D22FA3AE7004753D9 /* MPVExampleTests.xctest */;
+			productReference = F470646D22FA3AE7004753D9 /* MVPExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F470647722FA3AE7004753D9 /* MPVExampleUITests */ = {
+		F470647722FA3AE7004753D9 /* MVPExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F470648722FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MPVExampleUITests" */;
+			buildConfigurationList = F470648722FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MVPExampleUITests" */;
 			buildPhases = (
 				F470647422FA3AE7004753D9 /* Sources */,
 				F470647522FA3AE7004753D9 /* Frameworks */,
@@ -176,9 +217,9 @@
 			dependencies = (
 				F470647A22FA3AE7004753D9 /* PBXTargetDependency */,
 			);
-			name = MPVExampleUITests;
+			name = MVPExampleUITests;
 			productName = MPVExampleUITests;
-			productReference = F470647822FA3AE7004753D9 /* MPVExampleUITests.xctest */;
+			productReference = F470647822FA3AE7004753D9 /* MVPExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F470645422FA3AE4004753D9 /* Build configuration list for PBXProject "MPVExample" */;
+			buildConfigurationList = F470645422FA3AE4004753D9 /* Build configuration list for PBXProject "MVPExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -217,9 +258,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F470645822FA3AE4004753D9 /* MPVExample */,
-				F470646C22FA3AE7004753D9 /* MPVExampleTests */,
-				F470647722FA3AE7004753D9 /* MPVExampleUITests */,
+				F470645822FA3AE4004753D9 /* MVPExample */,
+				F470646C22FA3AE7004753D9 /* MVPExampleTests */,
+				F470647722FA3AE7004753D9 /* MVPExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,9 +270,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F470646722FA3AE7004753D9 /* LaunchScreen.storyboard in Resources */,
 				F470646422FA3AE7004753D9 /* Assets.xcassets in Resources */,
-				F470646222FA3AE4004753D9 /* Main.storyboard in Resources */,
+				F470648B22FA4427004753D9 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F470649122FA4506004753D9 /* TrafficLightService.swift in Sources */,
+				F470648E22FA44B5004753D9 /* TrafficLightPresenter.swift in Sources */,
 				F470645F22FA3AE4004753D9 /* ViewController.swift in Sources */,
 				F470645D22FA3AE4004753D9 /* AppDelegate.swift in Sources */,
+				F470649722FA470F004753D9 /* TrafficLightViewDelegate.swift in Sources */,
+				F470649422FA4597004753D9 /* TrafficLight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,34 +326,15 @@
 /* Begin PBXTargetDependency section */
 		F470646F22FA3AE7004753D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F470645822FA3AE4004753D9 /* MPVExample */;
+			target = F470645822FA3AE4004753D9 /* MVPExample */;
 			targetProxy = F470646E22FA3AE7004753D9 /* PBXContainerItemProxy */;
 		};
 		F470647A22FA3AE7004753D9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F470645822FA3AE4004753D9 /* MPVExample */;
+			target = F470645822FA3AE4004753D9 /* MVPExample */;
 			targetProxy = F470647922FA3AE7004753D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F470646022FA3AE4004753D9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F470646122FA3AE4004753D9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F470646522FA3AE7004753D9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F470646622FA3AE7004753D9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F470647F22FA3AE7004753D9 /* Debug */ = {
@@ -481,7 +506,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPVExample.app/MPVExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPExample.app/MVPExample";
 			};
 			name = Debug;
 		};
@@ -502,7 +527,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPVExample.app/MPVExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVPExample.app/MVPExample";
 			};
 			name = Release;
 		};
@@ -549,7 +574,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F470645422FA3AE4004753D9 /* Build configuration list for PBXProject "MPVExample" */ = {
+		F470645422FA3AE4004753D9 /* Build configuration list for PBXProject "MVPExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F470647F22FA3AE7004753D9 /* Debug */,
@@ -558,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F470648122FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MPVExample" */ = {
+		F470648122FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MVPExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F470648222FA3AE7004753D9 /* Debug */,
@@ -567,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F470648422FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MPVExampleTests" */ = {
+		F470648422FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MVPExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F470648522FA3AE7004753D9 /* Debug */,
@@ -576,7 +601,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F470648722FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MPVExampleUITests" */ = {
+		F470648722FA3AE7004753D9 /* Build configuration list for PBXNativeTarget "MVPExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F470648822FA3AE7004753D9 /* Debug */,
